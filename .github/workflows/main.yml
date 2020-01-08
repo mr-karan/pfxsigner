@@ -3,10 +3,10 @@ on:
   # Trigger the workflow on push or pull request,
   # but only for the master branch
   push:
-    branches-ignore:
-      - '**'
-    # branches:
-    #   - master
+    # branches-ignore:
+    #   - '**'
+    # # branches:
+    # #   - master
 jobs:
   goreleaser:
     runs-on: ubuntu-latest

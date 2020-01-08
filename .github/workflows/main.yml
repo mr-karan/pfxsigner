@@ -1,12 +1,10 @@
 name: goreleaser
 on:
   # Trigger the workflow on push or pull request,
-  # but only for the master branch
+  # but only if a semver tag is created.
   push:
-    # branches-ignore:
-    #   - '**'
-    # # branches:
-    # #   - master
+    tags:        
+      - v*.*.*
 jobs:
   goreleaser:
     runs-on: ubuntu-latest

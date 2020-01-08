@@ -26,8 +26,8 @@ dockers:
     binaries:
     - pfxsigner
     image_templates:
-    - "kailashnadh/pfxsigner:latest"
-    - "kailashnadh/pfxsigner:{{ .Tag }}"
+    - "mrkaran/pfxsigner:latest"
+    - "mrkaran/pfxsigner:{{ .Tag }}"
     skip_push: false
     dockerfile: Dockerfile
     extra_files:
